@@ -1,4 +1,3 @@
 package com.armavi_bsd.model
 
-class ItemMenu {
-}
+data class ItemMenu (val menuTitle:String, val menuIcon: Int)

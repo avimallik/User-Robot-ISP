@@ -1,11 +1,15 @@
 package com.armavi_bsd.viewDefinition
 
-import android.view.View
+import android.app.Activity
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.armavi_bsd.userrobotisp.Package
 import com.armavi_bsd.userrobotisp.R
 
-class ViewDefinationTwo (rootView: View) {
-//    val menuRecycler: RecyclerView = rootView.findViewById(R.id.menuRecycler)
-    val packageRecycler: RecyclerView = rootView.findViewById(R.id.packageRecycler)
+class ViewDefinationPackage(packageActivity: Activity) {
+
+    val packageRecycler: RecyclerView = packageActivity.findViewById(R.id.packageRecycler)
+    val testView: ImageView = packageActivity.findViewById(R.id.testView)
 
 }

@@ -1,3 +1,6 @@
 package com.armavi_bsd.model
 
-data class NoticeModel()
+data class NoticeModel(
+    val id: Int,
+    val notice: String
+)

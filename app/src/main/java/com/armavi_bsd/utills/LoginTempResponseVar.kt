@@ -1,7 +1,7 @@
 package com.armavi_bsd.utills
 
-data class LoginResponseValues(
-    val tempAgId: String = "",
+data class LoginTempResponseVar(
+    var tempAgId: String = "",
     val tempCusId: String = "",
     val tempAgName: String = "",
     val tempAgEmail: String = "",
@@ -14,7 +14,7 @@ data class LoginResponseValues(
     val tempBillCat: String = "",
     val tempConnectCharge: String = "",
     val tempDeviceType: String? = null,
-    val tempFiberColor: String? = null,
+    var tempFiberColor: String? = null,
     val tempFiberLatency: String? = null,
     val tempSpilterType: String? = null,
     val tempLongParameter: String? = null,
