@@ -1,0 +1,24 @@
+https://smpnuser.robotispsoft.net/
+01621475598
+aive13
+CUS00011
+
+Package:
+
+[{"id":"1","pack":"student","price":"500","description":"when an unknown printer took a galley of type and scrambled it to make a type specimen book"}, 
+{"id":"2","pack":"common","price":"800","description":"remaining essentially unchanged. It was popularised in the 1960s with the release"},
+{"id":"3","pack":"super","price":"1000","description":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of"},
+{"id":"4","pack":"marvellous","price":"1200","description":"Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia"}]
+
+package page dummy api: https://jsonkeeper.com/b/QZ9N
+
+bill amount demo:
+
+{"id":1,"bill_amount":12000,"notice":"Hurrah, You got 60% offer to purchasing any package you like, don't miss this chance!"}
+
+https://jsonkeeper.com/b/NFWE
+
+
+Notice:
+{"id":1,"notice":"Hurrah, You got 60% offer to purchasing any package you like, don't miss this chance!"}
+https://jsonkeeper.com/b/J8UZ
