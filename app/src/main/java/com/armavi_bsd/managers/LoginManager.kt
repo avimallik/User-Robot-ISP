@@ -38,6 +38,7 @@ class LoginManager(
 
     fun operationLogin(phoneNumberParam: String, userIDParam: String) {
         loginUrl = RetrofitClient.BASE_URL + apiService.loginEndpoint()
+        val queue = Volley.newRequestQueue(context)
 
         val stringRequest: StringRequest = object : StringRequest(
             Method.POST, loginUrl,
@@ -60,14 +61,13 @@ class LoginManager(
                 DefaultRetryPolicy.DEFAULT_BACKOFF_MULT
             )
         }
-
+        queue.add(stringRequest)
         Volley.newRequestQueue(context).add(stringRequest)
     }
     private fun handleResponse(response: String) {
         Log.e("Login Response", response)
+//        Toast.makeText(context, response, Toast.LENGTH_SHORT).show()
         try {
-            // Example processing logic
-//            Toast.makeText(context, response, Toast.LENGTH_SHORT).show()
             val jsonArray = JSONArray(response)
             for(i in 0 until jsonArray.length()){
                 var jsonObject: JSONObject = jsonArray.getJSONObject(i)
@@ -124,12 +124,13 @@ class LoginManager(
                 editor.putString(loginPrefKey.prefIsRecognition, "user_login")
                 editor.apply()
                 editor.commit()
-
-                Toast.makeText(context, sharedPreferences.getString(loginPrefKey.prefAgName, ""), Toast.LENGTH_SHORT).show()
+//                Toast.makeText(context, sharedPreferences.getString(loginPrefKey.prefAgName, ""), Toast.LENGTH_SHORT).show()
+//                if(response.equals("000")){
+//                    Toast.makeText(context, response, Toast.LENGTH_SHORT).show()
+//                }
 
                 dashaBoardIntent = Intent(context, Dashboard::class.java)
                 context.startActivity(dashaBoardIntent)
-
             }
         } catch (e: JSONException) {
             Log.d("JSON parsing error", e.toString())

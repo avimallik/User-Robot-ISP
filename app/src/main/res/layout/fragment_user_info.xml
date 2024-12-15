@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:fontFamily="@font/abel"
+                android:text="ID : "
+                android:textColor="@color/ui_color"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/infoCustomerID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="@font/abel"
+                android:text=""
+                android:textSize="17sp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout><View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_light_3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:fontFamily="@font/abel"
+                android:text="Name : "
+                android:textColor="@color/ui_color"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/infoCustomerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="@font/abel"
+                android:text=""
+                android:textSize="17sp" />
+
+        </LinearLayout><View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_light_3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:fontFamily="@font/abel"
+                android:text="Office Address : "
+                android:textColor="@color/ui_color"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/infoOfficeAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="@font/abel"
+                android:text=""
+                android:textSize="17sp" />
+
+        </LinearLayout><View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_light_3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:fontFamily="@font/abel"
+                android:text="Mobile Number : "
+                android:textColor="@color/ui_color"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/infoCustomerMobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="@font/abel"
+                android:text=""
+                android:textSize="17sp" />
+
+        </LinearLayout><View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_light_3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:fontFamily="@font/abel"
+                android:text="Active Package: "
+                android:textColor="@color/ui_color"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/infoCustomerMB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="@font/abel"
+                android:text=""
+                android:textSize="17sp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout><View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_light_3"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:fontFamily="@font/abel"
+                android:text="Zone Name : "
+                android:textColor="@color/ui_color"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/infoCustomerZoneName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="@font/abel"
+                android:text=""
+                android:textSize="17sp" />
+
+        </LinearLayout><View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_light_3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:fontFamily="@font/abel"
+                android:text="IP : "
+                android:textColor="@color/ui_color"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/infoCustomerIP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="@font/abel"
+                android:text=""
+                android:textSize="17sp" />
+
+        </LinearLayout><View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_light_3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:fontFamily="@font/abel"
+                android:text="Connection Date :"
+                android:textColor="@color/ui_color"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/infoConnectionDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="@font/abel"
+                android:text=""
+                android:textSize="17sp" />
+
+        </LinearLayout><View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_light_3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:fontFamily="@font/abel"
+                android:text="Collection Date: "
+                android:textColor="@color/ui_color"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/infoCollectionDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="@font/abel"
+                android:text=""
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</layout>
+

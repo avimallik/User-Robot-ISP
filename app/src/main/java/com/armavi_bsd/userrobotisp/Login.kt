@@ -12,11 +12,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.armavi_bsd.userrobotisp.databinding.ActivityLoginBinding
 import com.armavi_bsd.utills.LoginPrefKey
+import com.armavi_bsd.utills.RegularExpression
 import okhttp3.internal.cache.DiskLruCache
 
 
 class Login : AppCompatActivity() {
 
+    var regularExpression = RegularExpression()
     lateinit var dashBoardActivity: Intent
 
     //Shared pref variable
@@ -55,9 +57,15 @@ class Login : AppCompatActivity() {
 
         binding.loginButton.setOnClickListener {
 //            Toast.makeText(applicationContext,textCheck, Toast.LENGTH_SHORT).show()
-            val tempPhoneNumber = binding.loginPhoneNumberInput.text.toString()
-            val tempCustomerIDInput = binding.loginCustomerIDInput.text.toString()
-            loginManager.operationLogin(tempPhoneNumber, tempCustomerIDInput)
+            val tempPhoneNumber = binding.loginPhoneNumberInput.text.toString().trim()
+            val tempCustomerIDInput = binding.loginCustomerIDInput.text.toString().trim()
+
+
+            if(tempPhoneNumber.isEmpty() and tempCustomerIDInput.isEmpty()){
+                Toast.makeText(applicationContext, "Wrong inputs!", Toast.LENGTH_SHORT).show()
+            }else{
+                loginManager.operationLogin(tempPhoneNumber, tempCustomerIDInput)
+            }
         }
     }
 

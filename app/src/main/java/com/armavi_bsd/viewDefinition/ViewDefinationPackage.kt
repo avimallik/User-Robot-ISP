@@ -2,9 +2,7 @@ package com.armavi_bsd.viewDefinition
 
 import android.app.Activity
 import android.widget.ImageView
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.armavi_bsd.userrobotisp.Package
 import com.armavi_bsd.userrobotisp.R
 
 class ViewDefinationPackage(packageActivity: Activity) {

@@ -1,7 +1,9 @@
 package com.armavi_bsd.viewModel
 import android.app.Application
 import android.content.Context
+import android.content.SharedPreferences
 import android.util.Log
+import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -20,12 +22,18 @@ import retrofit2.Callback
 import retrofit2.Response
 
 
-class BillAmountViewModel : ViewModel() {
+class BillAmountViewModel(application: Application) : AndroidViewModel(application) {
+
+    val loginPrefKey = LoginPrefKey()
+    private val sharedPreferences: SharedPreferences = application.getSharedPreferences(loginPrefKey.prefUserCredential,
+        Context.MODE_PRIVATE)
+
     private val _billAmount = MutableLiveData<BillAmountModel>()
     val billAmount: LiveData<BillAmountModel> get() = _billAmount
 
     fun fetchBillAmount(){
-        RetrofitClient.apiService.getBillAmount("5").enqueue(object :
+        val clientID = sharedPreferences.getString(loginPrefKey.prefAgId, "default_client_id") ?: "default_client_id"
+        RetrofitClient.apiService.getBillAmount(clientID).enqueue(object :
             retrofit2.Callback<BillAmountModel> {
             override fun onResponse(call: Call<BillAmountModel>, response: Response<BillAmountModel>) {
                 if (response.isSuccessful) {

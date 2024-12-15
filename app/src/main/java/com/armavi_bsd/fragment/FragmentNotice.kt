@@ -55,7 +55,7 @@ class FragmentNotice: Fragment() {
                 // Handle the update here
                 binding.noticeViewModel = noticeViewModel
 
-                if(noticeModel.notice == ""){
+                if(noticeModel.notice_body == ""){
                     binding.noticeContainer.visibility = View.GONE
                 }else{
                     binding.noticeContainer.visibility = View.VISIBLE

@@ -58,7 +58,7 @@
                 android:layout_marginTop="0dp"
                 android:layout_marginRight="20dp"
                 android:fontFamily="@font/abel"
-                android:text="@{noticeViewModel.noticeDetails.notice}"
+                android:text="@{noticeViewModel.noticeDetails.notice_body}"
                 android:textColor="@color/black_light_2"
                 android:textSize="15sp" />
 

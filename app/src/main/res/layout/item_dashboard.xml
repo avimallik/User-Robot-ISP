@@ -14,8 +14,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="center"
-        android:foreground="?attr/selectableItemBackground"
-        >
+        android:foreground="?attr/selectableItemBackground">
 
         <ImageView
             android:id="@+id/itemImage"

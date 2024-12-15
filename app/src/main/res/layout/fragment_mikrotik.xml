@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="mikrotikViewModel"
+            type="com.armavi_bsd.viewModel.MikrotikViewModel" />
+    </data>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:fontFamily="@font/abel"
+                android:text="Name : "
+                android:textColor="@color/ui_color"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/mikrotikName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="@font/abel"
+                android:text="@{mikrotikViewModel.mikrotikDetails.name}"
+                android:textSize="17sp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout><View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_light_3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:fontFamily="@font/abel"
+                android:text="Profile : "
+                android:textColor="@color/ui_color"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/mikrotikProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="@font/abel"
+                android:text="@{mikrotikViewModel.mikrotikDetails.profile}"
+                android:textSize="17sp" />
+
+        </LinearLayout><View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_light_3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:fontFamily="@font/abel"
+                android:text="Service : "
+                android:textColor="@color/ui_color"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/mikrotikService"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="@font/abel"
+                android:text="@{mikrotikViewModel.mikrotikDetails.service}"
+                android:textSize="17sp" />
+
+        </LinearLayout><View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_light_3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:fontFamily="@font/abel"
+                android:text="Local Address : "
+                android:textColor="@color/ui_color"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/mikrotikLocalAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="@font/abel"
+                android:text="@{mikrotikViewModel.mikrotikDetails.local_address}"
+                android:textSize="17sp" />
+
+        </LinearLayout><View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_light_3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:fontFamily="@font/abel"
+                android:text="Remote Address : "
+                android:textColor="@color/ui_color"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/mikrotikRemoteAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="@font/abel"
+                android:text="@{mikrotikViewModel.mikrotikDetails.remote_address}"
+                android:textSize="17sp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout><View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_light_3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:fontFamily="@font/abel"
+                android:text="Last logged out : "
+                android:textColor="@color/ui_color"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/mikrotikLastLoggedIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:fontFamily="@font/abel"
+                android:text="@{mikrotikViewModel.mikrotikDetails.last_logged_out}"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</layout>
+

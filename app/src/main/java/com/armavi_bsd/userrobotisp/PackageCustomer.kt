@@ -2,23 +2,15 @@ package com.armavi_bsd.userrobotisp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import androidx.activity.viewModels
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.armavi_bsd.adapter.ItemAdapter
 import com.armavi_bsd.adapter.PackageAdapter
-import com.armavi_bsd.model.PackageModel
-import com.armavi_bsd.userrobotisp.databinding.ActivityLoginBinding
 import com.armavi_bsd.userrobotisp.databinding.ActivityPackageBinding
-import com.armavi_bsd.utills.DashboardMenuUtills
-import com.armavi_bsd.viewDefinition.ViewDefinationPackage
 import com.armavi_bsd.viewModel.PackageViewModel
 
-class Package : AppCompatActivity() {
+class PackageCustomer : AppCompatActivity() {
 
     private lateinit var binding: ActivityPackageBinding
     private lateinit var viewModel: PackageViewModel

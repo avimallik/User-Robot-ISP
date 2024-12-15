@@ -22,23 +22,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/abel"
+                android:text="@string/dummy_network"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:fontFamily="@font/abel"
                 android:text="@string/greetings"
                 android:textColor="@color/white"
                 android:textSize="16sp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="20dp"
-                android:fontFamily="@font/abel"
-                android:text="@string/dummy_network"
-                android:textColor="@color/white"
-                android:textSize="25dp" />
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
@@ -47,15 +48,14 @@
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/circular_layout">
+                    android:layout_height="wrap_content">
 
                     <ImageView
                         android:id="@+id/imageHolder"
-                        android:layout_width="160dp"
-                        android:layout_height="160dp"
-                        android:scaleType="fitXY"
-                        app:srcCompat="@drawable/letsgo"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/mit_logo"
                         android:padding="25dp"/>
 
                 </RelativeLayout>

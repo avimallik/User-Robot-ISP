@@ -18,6 +18,7 @@ class FragmentUserBio : Fragment() {
     lateinit var binding: FragmentUserBioBinding
     lateinit var sharedPreferences: SharedPreferences
     var loginPrefKey = LoginPrefKey()
+    lateinit var agentStatusCheck: String
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -30,6 +31,14 @@ class FragmentUserBio : Fragment() {
         binding.fragmentAgentName.text = sharedPreferences.getString(loginPrefKey.prefAgName, "")
         binding.fragmentAgentCusId.text = sharedPreferences.getString(loginPrefKey.prefCusId, "")
         binding.fragmentAgentPhonenumber.text = sharedPreferences.getString(loginPrefKey.prefAgMobileNo, "")
+
+        agentStatusCheck = sharedPreferences.getString(loginPrefKey.prefAgStatus, "").toString()
+
+        if(agentStatusCheck == "1"){
+            binding.fragmentAgentStatus.text = "Active"
+        }else if(agentStatusCheck == "0"){
+            binding.fragmentAgentStatus.text = "Inactive"
+        }
 
         return binding.root
     }
