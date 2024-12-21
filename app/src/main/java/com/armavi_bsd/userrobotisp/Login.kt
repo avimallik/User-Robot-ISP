@@ -50,16 +50,21 @@ class Login : AppCompatActivity() {
 //        loginCustomerIDInput = findViewById<EditText>(R.id.loginCustomerIDInput)
 //        loginPhoneNumberInput = findViewById<EditText>(R.id.loginPhoneNumberInput)
 
+        //App test dummy credential
         val ag_mobile_no = "01757751407"
         val cus_id = "MIT00005"
 
         loginManager = LoginManager(this)
 
         binding.loginButton.setOnClickListener {
-//            Toast.makeText(applicationContext,textCheck, Toast.LENGTH_SHORT).show()
-            val tempPhoneNumber = binding.loginPhoneNumberInput.text.toString().trim()
-            val tempCustomerIDInput = binding.loginCustomerIDInput.text.toString().trim()
 
+            //App test credential
+            val tempPhoneNumber: String = "01862444845"
+            val tempCustomerIDInput: String = "MIT00261"
+
+//            Toast.makeText(applicationContext,textCheck, Toast.LENGTH_SHORT).show()
+//            val tempPhoneNumber = binding.loginPhoneNumberInput.text.toString().trim()
+//            val tempCustomerIDInput = binding.loginCustomerIDInput.text.toString().trim()
 
             if(tempPhoneNumber.isEmpty() and tempCustomerIDInput.isEmpty()){
                 Toast.makeText(applicationContext, "Wrong inputs!", Toast.LENGTH_SHORT).show()

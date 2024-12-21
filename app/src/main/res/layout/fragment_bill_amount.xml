@@ -93,8 +93,9 @@
                     android:text="@string/pay_now_title" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
-
         </LinearLayout>
+
     </androidx.cardview.widget.CardView>
+
 </layout>
 

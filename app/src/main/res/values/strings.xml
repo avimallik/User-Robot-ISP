@@ -27,6 +27,7 @@
     <string name="menu_package">Package</string>
     <string name="menu_payment_history">Payment History</string>
     <string name="menu_microtik">MikroTik</string>
+    <string name="menu_complain">Complain</string>
 
     <!-- Package page -->
     <string name="package_title">Package &amp; Pricing</string>
@@ -37,6 +38,14 @@
     Email support\n
     Phone support\n
     24/7 support</string>
+
+    <!-- Complain -->
+    <string name="complain_title">Complain</string>
+    <string-array name="complainTemplateItem">
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
 
     <!-- Transaction History Page -->
     <string name="transaction_history_title">Payment History</string>

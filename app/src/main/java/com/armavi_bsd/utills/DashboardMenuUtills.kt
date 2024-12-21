@@ -10,7 +10,8 @@ object DashboardMenuUtills {
             ItemMenu(menuItemContext.getString(R.string.menu_profile_info), R.drawable.face_ico),
             ItemMenu(menuItemContext.getString(R.string.menu_package), R.drawable.package_ico),
             ItemMenu(menuItemContext.getString(R.string.menu_payment_history), R.drawable.payment_history_ico),
-            ItemMenu(menuItemContext.getString(R.string.menu_microtik), R.drawable.router_ico)
+            ItemMenu(menuItemContext.getString(R.string.menu_microtik), R.drawable.router_ico),
+            ItemMenu(menuItemContext.getString(R.string.menu_complain), R.drawable.complain_ico)
         )
     }
 }

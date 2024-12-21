@@ -74,6 +74,8 @@ class Dashboard : AppCompatActivity() {
                 intentRoute.intentPackage(this)
             }else if(position == 3){
                 intentRoute.intentMikrotik(this)
+            }else if(position == 4){
+                intentRoute.intentComplainView(this)
             }
         }
 
@@ -82,7 +84,6 @@ class Dashboard : AppCompatActivity() {
             sharedPreferences.edit().clear().commit()
             intentRoute.intentLogin(this)
             finish()
-
         }
         //Attached recyclerView with adapter
         viewDefinitionDashboard.menuRecycler.adapter = adapterDashboardMenu

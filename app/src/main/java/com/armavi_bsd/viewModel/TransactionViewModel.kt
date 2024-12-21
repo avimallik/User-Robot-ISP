@@ -28,7 +28,10 @@ class TransactionViewModel(application: Application) : AndroidViewModel(applicat
     private val apiService: ApiService = RetrofitClient.apiService
 
     fun fetchTransactionHistory() {
-        val clientID = sharedPreferences.getString(loginPrefKey.prefAgId, "default_client_id") ?: "default_client_id"
+
+        val clientID = sharedPreferences.getString(loginPrefKey.prefAgId,
+            "default_client_id") ?: "default_client_id"
+
 //        val clientID = "5"
         apiService.getTransactionHistory(clientID).enqueue(object :
             Callback<List<TransactionModel>> {

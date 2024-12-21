@@ -10,6 +10,7 @@ import com.armavi_bsd.retrofitClient.RetrofitClient
 import kotlinx.coroutines.launch
 
 class PackageViewModel : ViewModel() {
+
     private val _packages = MutableLiveData<List<PackageModel>>()
     val packages: LiveData<List<PackageModel>> get() = _packages
 
