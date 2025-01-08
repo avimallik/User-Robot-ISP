@@ -1,1 +1,1 @@
-User Robot ISP is android application desgined for the user how purchase subcription of Robot ISP's ecosystem 
+User Robot ISP is an android application desgined for the user who purchases the subcription of Robot ISP's ecosystem.
